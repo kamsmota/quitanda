@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+	background-color: beige;
+	margin: 0;
+	padding: 0;
+	}
+.container {
+	max-width: 600px;
+	margin: 50px auto;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqoJQ_f0Gb49O-ToCWGChSrFeiiryf86N3yiXnBCJsLdd6Ia-T);
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-color: rgb(48, 81, 58);
+}
+	
+h1 {
+	text-align: center;
+    color:rgb(48, 81, 58);
+}
+	
+.inputs {
+    margin-bottom: 20px;
+}
+legend{
+    color: rgb(19, 73, 32);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+	
+fieldset{
+    margin: 15px;
+}
+select{
+    border: 1px solid #3a1e1e;
+    width: 100%;
+    margin: 5px;
+}
+label {
+    display: block;
+    margin: 10px;
+    font-size: smaller;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(48, 81, 58);
+    width: 23%;
+}
+input {
+    width: 100%;
+	padding: 8px;
+	border: 1px solid #3a1e1e;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 30%;
+    padding: 8px;
+    background-color: rgb(0, 159, 35);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: smaller;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+	
+button:hover {
+	background-color: rgb(19, 73, 32);
+}
+p#resultado {
+	margin-top: 20px;
+    background-color: rgb(32, 178, 146);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    border-radius: 4px;
+}

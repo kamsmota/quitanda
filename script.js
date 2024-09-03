@@ -2,7 +2,7 @@ let total = 0;
 function adicionarCarrinho() {
     let preco = 0;
     let valor = 0;
-    let fruta = document.getElementById("Fruta").value.trim();
+    let fruta = document.getElementById("Frutas").value.trim();
     let qtd = document.getElementById("quantidade").value;
     switch (fruta) {
         case ("Banana"):
@@ -24,29 +24,28 @@ function adicionarCarrinho() {
             preco = 4;
             valor = (qtd * preco);
             total = total + valor;
+            break;
         case ("Melão"):
             preco = 12;
             valor = (qtd * preco);
             total = total + valor;
+            break;
         case ("Abacaxi"):
             preco = 13;
             valor = (qtd * preco);
             total = total + valor;
+            break;
         default:
             preco = 5;
             valor = (qtd * preco);
             total = total + valor;
             break;
     }
-    if (qtd < 1) {
-        alert("insira a quantidade do produto (dever ser maior q 1!)");
-        document.getElementById("quantidade").value = null;
-    } else {
-        let produtos = document.createElement("div", id = "produtos");
-        produtos.style = 'word-break: break-all;';
-        produtos.innerHTML = qtd + 'x' + ' ' + fruta + ' - R$ ' + valor.toFixed(2);
-        document.getElementById("carrinho").appendChild(produtos);
-        let resultado = document.getElementById("total");
-        resultado.innerHTML = "TOTAL:<b> R$ " + total.toFixed(2) + "</b>";
-    }
+let produtos = document.createElement("div");
+produtos.style.wordBreak = 'break-all';
+produtos.innerHTML = `${qtd}x ${fruta} - R$ ${valor.toFixed(2)}`;
+document.getElementById("carrinho").appendChild(produtos);
+
+let resultado = document.getElementById("total");
+resultado.innerHTML = `TOTAL: <b>R$ ${total.toFixed(2)}</b>`;
 }

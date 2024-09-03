@@ -1,60 +1,68 @@
 body {
     font-family: Arial, sans-serif;
-	background-color: beige;
-	margin: 0;
-	padding: 0;
-	}
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
-	max-width: 600px;
-	margin: 50px auto;
-	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqoJQ_f0Gb49O-ToCWGChSrFeiiryf86N3yiXnBCJsLdd6Ia-T);
-	padding: 20px;
-	border-radius: 8px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-color: rgb(48, 81, 58);
+    max-width: 600px;
+    margin: 50px auto;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqoJQ_f0Gb49O-ToCWGChSrFeiiryf86N3yiXnBCJsLdd6Ia-T);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(48, 81, 58); /* Adicionado para exibir a borda */
 }
-	
+
 h1 {
-	text-align: center;
-    color:rgb(48, 81, 58);
+    text-align: center;
+    color: rgb(48, 81, 58);
 }
-	
+
 .inputs {
     margin-bottom: 20px;
 }
-legend{
+
+legend {
     color: rgb(19, 73, 32);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-	
-fieldset{
+
+fieldset {
     margin: 15px;
+    border: 1px solid #ddd; /* Adicionado para melhorar a visibilidade */
+    padding: 10px; /* Adicionado para adicionar algum espaçamento interno */
 }
-select{
+
+select {
     border: 1px solid #3a1e1e;
     width: 100%;
-    margin: 5px;
+    margin: 5px 0; /* Ajustado para margens mais consistentes */
+    padding: 8px; /* Adicionado para melhorar a aparência */
+    box-sizing: border-box; /* Garantido que padding e border sejam incluídos no tamanho total */
 }
+
 label {
     display: block;
-    margin: 10px;
+    margin: 10px 0; /* Ajustado para margens mais consistentes */
     font-size: smaller;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(48, 81, 58);
-    width: 23%;
 }
+
 input {
-    width: 100%;
-	padding: 8px;
-	border: 1px solid #3a1e1e;
+    width: calc(100% - 20px); /* Ajustado para considerar padding e border */
+    padding: 8px;
+    border: 1px solid #3a1e1e;
     border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 10px;
 }
 
 button {
-    width: 30%;
-    padding: 8px;
+    width: auto; /* Ajustado para se ajustar ao conteúdo */
+    padding: 8px 16px; /* Ajustado para ter um padding mais uniforme */
     background-color: rgb(0, 159, 35);
     color: #ffffff;
     border: none;
@@ -64,12 +72,13 @@ button {
     font-size: smaller;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-	
+
 button:hover {
-	background-color: rgb(19, 73, 32);
+    background-color: rgb(19, 73, 32);
 }
+
 #produtos {
-	margin-top: 20px;
+    margin-top: 20px;
     background-color: rgb(32, 178, 146);
     color: #fff;
     padding: 5px;

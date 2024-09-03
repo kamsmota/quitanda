@@ -2,7 +2,7 @@ let total = 0;
 function adicionarCarrinho() {
     let preco = 0;
     let valor = 0;
-    let fruta = document.getElementById("fruta").value.trim();
+    let fruta = document.getElementById("Fruta").value.trim();
     let qtd = document.getElementById("quantidade").value;
     switch (fruta) {
         case ("Banana"):

@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel = stylesheet href = styles.css>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quitanda</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class = container>
-    <h1>Quitanda</h1>
-<form id = "formQuitanda">
-    <div class = inputs>
-        <fieldset>
-        <legend>Vamos as compras!</legend>
-        <label for = "Frutas">Escolha uma fruta:</label>
-        <select id="frutas" name="frutas" required>
-            <option value="select">Selecione</option>
-            <optgroup label="Frutas em Promoção:"></optgroup>
-            <option value="Banana">Banana - R$2,00</option>
-            <option value="Laranja">Laranja - R$1,50</option>
-            <option value="Maçã">Maçã - R$3,00</option>
-            <option value="Uva">Uva - R$5,00</option>
-            <optgroup label="Outras frutas:"></optgroup>
-            <option value="Kiwi">Kiwi - R$4,00</option>
-            <option value="Melão">Melão - R$!2,00</option>
-            <option value="Abacaxi">Abacaxi - R$13,00</option>
-        </select>
-        <label for="quantidade">Quantidade:</label>
-        <input type="number" id="numero" placeholder="Digite a quantidade aqui">
-        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+    <div class="container">
+        <h1>Quitanda</h1>
+        <form id="formQuitanda">
+            <div class="inputs">
+                <fieldset>
+                    <legend>Vamos às compras!</legend>
+                    <label for="frutas">Escolha uma fruta:</label>
+                    <select id="Frutas" name="frutas" required>
+                        <option value="select">Selecione</option>
+                        <optgroup label="Frutas em Promoção:"></optgroup>
+                        <option value="Banana">Banana - R$2,00</option>
+                        <option value="Laranja">Laranja - R$1,50</option>
+                        <option value="Maçã">Maçã - R$3,00</option>
+                        <option value="Uva">Uva - R$5,00</option>
+                        <optgroup label="Outras frutas:"></optgroup>
+                        <option value="Kiwi">Kiwi - R$4,00</option>
+                        <option value="Melão">Melão - R$12,00</option>
+                        <option value="Abacaxi">Abacaxi - R$13,00</option>
+                    </select>
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" placeholder="Digite a quantidade aqui" min="1">
+                    <button type="button" onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+                </fieldset>
+            </div>
+            <h1>Carrinho</h1>
+            <fieldset>
+                <legend>Estamos quase lá! Finalize sua compra abaixo:</legend>
+                <div id="carrinho"></div>
+                <div id="total"></div>
+            </fieldset>
+        </form>
     </div>
-    </fieldset>
-    <h1>Carrinho</h1>
-    <fieldset>
-        <legend>Estamos quase lá! Finalize sua compra abaixo:</legend>
-    </fieldset>
-</form>
-</div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

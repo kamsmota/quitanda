@@ -12,7 +12,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid rgb(48, 81, 58); /* Adicionado para exibir a borda */
+    border: 2px solid rgb(48, 81, 58);
 }
 
 h1 {
@@ -31,28 +31,27 @@ legend {
 
 fieldset {
     margin: 15px;
-    border: 1px solid #ddd; /* Adicionado para melhorar a visibilidade */
-    padding: 10px; /* Adicionado para adicionar algum espaçamento interno */
+    padding: 10px;
 }
 
 select {
     border: 1px solid #3a1e1e;
     width: 100%;
-    margin: 5px 0; /* Ajustado para margens mais consistentes */
-    padding: 8px; /* Adicionado para melhorar a aparência */
-    box-sizing: border-box; /* Garantido que padding e border sejam incluídos no tamanho total */
+    margin: 5px 0; 
+    padding: 8px; 
+    box-sizing: border-box;
 }
 
 label {
     display: block;
-    margin: 10px 0; /* Ajustado para margens mais consistentes */
+    margin: 10px 0;
     font-size: smaller;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(48, 81, 58);
 }
 
 input {
-    width: calc(100% - 20px); /* Ajustado para considerar padding e border */
+    width: calc(100% - 20px);
     padding: 8px;
     border: 1px solid #3a1e1e;
     border-radius: 4px;
@@ -61,8 +60,8 @@ input {
 }
 
 button {
-    width: auto; /* Ajustado para se ajustar ao conteúdo */
-    padding: 8px 16px; /* Ajustado para ter um padding mais uniforme */
+    width: auto;
+    padding: 8px 16px;
     background-color: rgb(0, 159, 35);
     color: #ffffff;
     border: none;

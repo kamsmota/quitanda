@@ -10,10 +10,10 @@
 
 - `HTML e CSS`
 
-<h4> Objetivo</h4>
+<h4> Objetivo:</h4>
 <p>Criar uma interface que permita a seleção dos produtos de uma quitanda e a compra deles.</p>
 
-<h4> Alguns requisitos </h4>
+<h4> Alguns requisitos: </h4>
 <ol>
 <li>A alteração do valor total quando houver itens dentro do carrinho de compras</li>
 <li>A multiplicação do valor de um item de acordo com sua quantidade</li>

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --white: #F3F0DD;
+    --black: #442912;
+    --dark-green: #2B5125;
+    --light-green: #B9DAB4;
+    --dark-orange: #AD4403;
+    --light-orange: #EBB797;
+    --light-brown: #635244;
+}
+
+*{
+    font-family: 'Quicksand', serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--dark-green);
+}
+
+strong{
+    color:var(--light-orange);
+}
+
+p{
+    color: var(--light-green);
+}
+
+h2{
+    color: var(--dark-orange);
+    font-family: 'Aclonica', serif;
+}
+
+form{
+    border: 2px solid var(--dark-orange);
+    height: 25rem;
+    width: 25rem;
+    align-self: center;
+
+}
+#inputs{
+    background-color: var(--light-green);
+    border-radius: 3rem;
+    color: var(--black);
+}
+
+label{
+    color: var(--black);
+
+}
